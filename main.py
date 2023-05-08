@@ -64,7 +64,7 @@ async def on_message(message):
 
 
         elif is_short and is_open:
-            place_bet_position = pyautogui.locateOnScreen('C:/Users/bapti/Desktop/short_bet.png', confidence=0.9)
+            place_bet_position = pyautogui.locateOnScreen('short_bet.png', confidence=0.9)
             if place_bet_position:
                 place_bet_center = pyautogui.center(place_bet_position)
                 pyautogui.click(place_bet_center.x, place_bet_center.y)
